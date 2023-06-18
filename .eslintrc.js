@@ -30,7 +30,7 @@ module.exports = {
         "@typescript-eslint",
         "react"
     ],
-    "ignorePatterns": ['craco.config.js'],
+    "ignorePatterns": ['craco.config.js', 'node_modules/**', 'build/**'],
     "rules": {
     }
 }
