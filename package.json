@@ -22,8 +22,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --fix",
-    "prepare": "husky install"
+    "lint": "eslint . --fix"
   },
   "eslintConfig": {
     "extends": [
