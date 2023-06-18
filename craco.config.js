@@ -1,3 +1,4 @@
+const path = require('path');
 const { VanillaExtractPlugin } = require("@vanilla-extract/webpack-plugin");
 const ModuleScopePlugin = require("react-dev-utils/ModuleScopePlugin");
 
