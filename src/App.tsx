@@ -4,6 +4,7 @@ import { themeClass } from "./theme.css";
 import * as css from "./App.css";
 import classNames from "classnames";
 import { FrontPageCover } from "./components/frontPageCover/frontPageCover";
+import { StartOnboardingCta } from "./components/startOnboardingCta/startOnboardingCta";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       </header>
       <body>
         <FrontPageCover id="Introducing-A-New-Platform" />
+        <StartOnboardingCta />
       </body>
     </div>
   );
