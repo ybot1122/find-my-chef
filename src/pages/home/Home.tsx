@@ -5,10 +5,10 @@ import { StartOnboardingCta } from "../../components/startOnboardingCta/startOnb
 
 const HomePage = () => {
   return (
-    <>
+    <section>
       <FrontPageCover id="front-page-cover" />
       <StartOnboardingCta />
-    </>
+    </section>
   );
 };
 
