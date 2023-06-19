@@ -31,5 +31,5 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["@typescript-eslint", "react"],
-  ignorePatterns: ["craco.config.js", "node_modules/**", "build/**"],
+  ignorePatterns: ["craco.config.js", "node_modules/**", "build/**, .github/**"],
 };
