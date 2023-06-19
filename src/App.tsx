@@ -18,6 +18,11 @@ const App = () => {
       </header>
       <body>
         <div id="front-cover" className={css.frontCover}>
+          <img
+            src="/pancakes.gif"
+            alt={FRONT_COVER_SUBTEXT}
+            className={css.frontCoverImage}
+          />
           <div className={css.frontCoverText}>{FRONT_COVER_INTRO}</div>
           <div className={css.breakRow} />
           <div className={css.frontCoverText}>{FRONT_COVER_TEXT}</div>
