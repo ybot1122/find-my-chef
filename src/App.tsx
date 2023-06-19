@@ -4,8 +4,9 @@ import { themeClass } from "./theme.css";
 import * as css from "./App.css";
 import classNames from "classnames";
 
-const FRONT_COVER_TEXT = 'Introducing a New Platform for Home Chefs';
-const FRONT_COVER_SUBTEXT = 'Finally, a digital platform optimized for home chefs to share and collaborate.'
+const FRONT_COVER_TEXT = "Introducing a New Platform for Home Chefs";
+const FRONT_COVER_SUBTEXT =
+  "Finally, a digital platform optimized for home chefs to share and collaborate.";
 
 const App = () => {
   return (
@@ -15,12 +16,8 @@ const App = () => {
       </header>
       <body>
         <div id="front-cover" className={css.frontCover}>
-          <div className={css.frontCoverText}>
-              {FRONT_COVER_TEXT}
-          </div>
-          <p className={css.frontCoverSubtext}>
-            {FRONT_COVER_SUBTEXT}
-          </p>
+          <div className={css.frontCoverText}>{FRONT_COVER_TEXT}</div>
+          <p className={css.frontCoverSubtext}>{FRONT_COVER_SUBTEXT}</p>
         </div>
       </body>
     </div>

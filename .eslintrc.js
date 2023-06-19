@@ -18,6 +18,12 @@ module.exports = {
         sourceType: "script",
       },
     },
+    {
+      files: ["**"],
+      rules: {
+      "max-len": "off"
+      },
+    }
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -26,7 +32,4 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "react"],
   ignorePatterns: ["craco.config.js", "node_modules/**", "build/**"],
-  rules: {
-    "max-len": "off"
-  },
 };
