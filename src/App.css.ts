@@ -15,4 +15,6 @@ export const app = style({
 
 export const title = style({
   textAlign: "center",
+  margin: 0,
+  padding: "50px",
 });

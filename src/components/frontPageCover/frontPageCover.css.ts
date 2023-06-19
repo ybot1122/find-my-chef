@@ -13,12 +13,6 @@ export const frontCover = style({
   padding: "50px 0",
 });
 
-export const frontCoverScrim = style({
-  zIndex: 1,
-  backgroundColor: vars.colors.accent,
-  opacity: 0.6,
-});
-
 export const frontCoverImage = style({
   position: "absolute",
   top: 0,
@@ -29,6 +23,12 @@ export const frontCoverImage = style({
   zIndex: 0,
 });
 
+export const frontCoverScrim = style({
+  zIndex: 1,
+  backgroundColor: "rgba(255,255,255,0.5)",
+  padding: "25px",
+});
+
 export const frontCoverText = style({
   maxWidth: "768px",
   fontSize: "4em",
@@ -36,7 +36,7 @@ export const frontCoverText = style({
 });
 
 export const frontCoverSubtext = style({
-  width: "768px",
+  maxWidth: "768px",
   fontSize: "2em",
   zIndex: 2,
 });

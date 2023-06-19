@@ -1,7 +1,6 @@
 import React from "react";
 
 import * as css from "./frontPageCover.css";
-import classNames from "classnames";
 
 const FRONT_COVER_INTRO = "Introducing";
 const FRONT_COVER_TEXT = "A New Platform";
