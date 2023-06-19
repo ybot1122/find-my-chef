@@ -3,9 +3,7 @@ import React from "react";
 import { themeClass } from "./theme.css";
 import * as css from "./App.css";
 import classNames from "classnames";
-import { FrontPageCover } from "./components/frontPageCover/frontPageCover";
-import { StartOnboardingCta } from "./components/startOnboardingCta/startOnboardingCta";
-
+import { Outlet } from "react-router-dom";
 const App = () => {
   return (
     <div className={classNames(themeClass, css.app)}>
@@ -13,11 +11,10 @@ const App = () => {
         <h1>FindMyChef</h1>
       </header>
       <body>
-        <FrontPageCover id="Introducing-A-New-Platform" />
-        <StartOnboardingCta />
+        <Outlet />
       </body>
     </div>
   );
 };
 
-export default App;
+export { App };
