@@ -16,7 +16,7 @@ const StartOnboardingCta = () => {
 
       <div className={css.startOnboardingCard}>
         <img src="/diner.png" alt={FOODIE_CTA} height="320px" />
-        <button>{FOODIE_CTA}</button>
+        <Link to="/foodieOnboarding">{FOODIE_CTA}</Link>
       </div>
     </div>
   );
