@@ -1,6 +1,7 @@
 import React from "react";
 
 import * as css from "./startOnboardingCta.css";
+import { Link } from "react-router-dom";
 
 const CHEF_CTA = "Start Chef Onboarding";
 const FOODIE_CTA = "Start Foodie Onboarding";
@@ -10,7 +11,7 @@ const StartOnboardingCta = () => {
     <div className={css.frontCover}>
       <div className={css.startOnboardingCard}>
         <img src="/chef.png" alt={CHEF_CTA} width={"100%"} />
-        <button>{CHEF_CTA}</button>
+        <Link to="/chefOnboarding">{CHEF_CTA}</Link>
       </div>
 
       <div className={css.startOnboardingCard}>

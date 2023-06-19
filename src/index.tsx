@@ -3,22 +3,26 @@ import ReactDOM from "react-dom/client";
 import { App } from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
-import { ChefOnboarding } from "./pages/chefOnboarding/ChefOnboarding";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ChefOnboardingPage } from "./pages/chefOnboarding/ChefOnboardingPage";
+import { HomePage } from "./pages/home/Home";
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route path="chefOnboarding" element={<ChefOnboarding />} />
-      {/* ... etc. */}
-    </Route>
-  )
-);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <HomePage />,
+      },
+      {
+        path: "chefOnboarding",
+        element: <ChefOnboardingPage />,
+      },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
