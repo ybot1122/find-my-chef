@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ChefOnboardingPage } from "./pages/chefOnboarding/ChefOnboardingPage";
 import { HomePage } from "./pages/home/Home";
+import { FoodieOnboardingPage } from "./pages/foodieOnboarding/FoodieOnboardingPage";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "chefOnboarding",
         element: <ChefOnboardingPage />,
+      },
+      {
+        path: "foodieOnboarding",
+        element: <FoodieOnboardingPage />,
       },
     ],
   },
