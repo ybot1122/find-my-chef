@@ -10,9 +10,8 @@ const App = () => {
       <header className={css.title}>
         <h1>FindMyChef</h1>
       </header>
-      <body>
-        <Outlet />
-      </body>
+      <Outlet />
+      <footer>(C) 2023 Toby Liu</footer>
     </div>
   );
 };

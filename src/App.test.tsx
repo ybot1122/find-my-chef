@@ -1,9 +1,16 @@
+import React from "react";
+
 import { describe, it, expect } from "vitest";
+import { render, screen } from "@testing-library/react";
 
 import { App } from "./App";
 
-describe("Hello", () => {
-  it("renders the heading", () => {
-    expect(true).toBe(true);
+describe("App", () => {
+  it("renders headline", () => {
+    render(<App />);
+
+    const headline = screen.getByText("FindMyChef");
+
+    expect(headline).toBeInTheDocument();
   });
 });
