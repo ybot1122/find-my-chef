@@ -23,6 +23,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "vitest": "vitest run",
     "eject": "react-scripts eject",
     "lint": "eslint . --fix"
   },
