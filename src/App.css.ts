@@ -19,6 +19,7 @@ export const title = style({
 
 export const frontCover = style({
   display: "flex",
+  flexWrap: "wrap",
   alignItems: "center",
   justifyContent: "center",
   textAlign: "center",
@@ -33,5 +34,16 @@ export const frontCoverText = style({
 });
 
 export const frontCoverSubtext = style({
+  width: "768px",
   fontSize: "2em",
+});
+
+export const breakRow = style({
+  flexBasis: "100%",
+  height: 0,
+});
+
+export const spacer = style({
+  flexBasis: "100%",
+  height: "50px",
 });
