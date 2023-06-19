@@ -27,5 +27,6 @@ module.exports = {
   plugins: ["@typescript-eslint", "react"],
   ignorePatterns: ["craco.config.js", "node_modules/**", "build/**"],
   rules: {
+    "max-len": "off"
   },
 };
