@@ -18,3 +18,8 @@ export const title = style({
   margin: 0,
   padding: "50px",
 });
+
+export const heading = style({
+  margin: 0,
+  padding: 0,
+});
