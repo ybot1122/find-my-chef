@@ -58,3 +58,12 @@ export const photoGalleryImgContainer = style({
     },
   },
 });
+
+export const recipeCta = style({
+  display: "none",
+  selectors: {
+    [`${photoGalleryImgContainer}:hover &`]: {
+      display: "block",
+    },
+  },
+});

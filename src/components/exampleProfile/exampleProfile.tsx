@@ -22,6 +22,7 @@ const ExampleProfile = () => {
 
       <div className={classNames(css.row, css.photoGallery)}>
         <div className={css.photoGalleryImgContainer}>
+          <div className={css.recipeCta}>Click Here for Recipe</div>
           <img
             src="/foodFeed/beefnoodle.jpg"
             alt="Beef Noodle"
