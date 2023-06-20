@@ -32,4 +32,11 @@ export const photoGalleryImg = style({
   width: "100%",
   height: "320px",
   objectFit: "cover",
+
+  "@media": {
+    "screen and (min-width: 768px)": {
+      width: "50%",
+      height: "640px",
+    },
+  },
 });
