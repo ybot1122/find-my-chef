@@ -16,49 +16,64 @@ const ExampleProfile = () => {
           <p>{FAKE_BIO}</p>
         </div>
         <div className={css.column}>
-          <img
-            src="/MeProfessionalCropped.jpg"
-            className={css.photoGalleryImg}
-          />
+          <img src="/MeProfessionalCropped.jpg" className={css.profileImg} />
         </div>
       </div>
 
       <div className={classNames(css.row, css.photoGallery)}>
-        <img
-          src="/foodFeed/beefnoodle.jpg"
-          alt="Beef Noodle"
-          className={css.photoGalleryImg}
-        />
-        <img
-          src="/foodFeed/eggrolls.jpg"
-          alt="Egg Rolls"
-          className={css.photoGalleryImg}
-        />
-        <img
-          src="/foodFeed/freshmuffins.gif"
-          alt="Fresh Muffins from the oven"
-          className={css.photoGalleryImg}
-        />
-        <img
-          src="/foodFeed/granola_bowl.jpg"
-          alt="Bowl of Granola"
-          className={css.photoGalleryImg}
-        />
-        <img
-          src="/foodFeed/granola.jpg"
-          alt="World's best Granola"
-          className={css.photoGalleryImg}
-        />
-        <img
-          src="/foodFeed/pancake-batter.jpg"
-          alt="Pancake batter"
-          className={css.photoGalleryImg}
-        />
-        <img
-          src="/foodFeed/pancakes-in-pan.jpg"
-          alt="Pancakes in the pan"
-          className={css.photoGalleryImg}
-        />
+        <div className={css.photoGalleryImgContainer}>
+          <img
+            src="/foodFeed/beefnoodle.jpg"
+            alt="Beef Noodle"
+            className={css.photoGalleryImg}
+          />
+        </div>
+
+        <div className={css.photoGalleryImgContainer}>
+          <img
+            src="/foodFeed/eggrolls.jpg"
+            alt="Egg Rolls"
+            className={css.photoGalleryImg}
+          />
+        </div>
+        <div className={css.photoGalleryImgContainer}>
+          <img
+            src="/foodFeed/freshmuffins.gif"
+            alt="Fresh Muffins from the oven"
+            className={css.photoGalleryImg}
+          />
+        </div>
+        <div className={css.photoGalleryImgContainer}>
+          <img
+            src="/foodFeed/granola_bowl.jpg"
+            alt="Bowl of Granola"
+            className={css.photoGalleryImg}
+          />
+        </div>
+
+        <div className={css.photoGalleryImgContainer}>
+          <img
+            src="/foodFeed/granola.jpg"
+            alt="World's best Granola"
+            className={css.photoGalleryImg}
+          />
+        </div>
+
+        <div className={css.photoGalleryImgContainer}>
+          <img
+            src="/foodFeed/pancake-batter.jpg"
+            alt="Pancake batter"
+            className={css.photoGalleryImg}
+          />
+        </div>
+
+        <div className={css.photoGalleryImgContainer}>
+          <img
+            src="/foodFeed/pancakes-in-pan.jpg"
+            alt="Pancakes in the pan"
+            className={css.photoGalleryImg}
+          />
+        </div>
       </div>
     </div>
   );
