@@ -11,12 +11,16 @@ const StartOnboardingCta = () => {
     <div className={css.frontCover}>
       <div className={css.startOnboardingCard}>
         <img src="/chef.png" alt={CHEF_CTA} width={"100%"} />
-        <Link to="/chefOnboarding">{CHEF_CTA}</Link>
+        <Link to="/chefOnboarding" className={css.ctaButton}>
+          {CHEF_CTA}
+        </Link>
       </div>
 
       <div className={css.startOnboardingCard}>
         <img src="/diner.png" alt={FOODIE_CTA} height="320px" />
-        <Link to="/foodieOnboarding">{FOODIE_CTA}</Link>
+        <Link to="/foodieOnboarding" className={css.ctaButton}>
+          {FOODIE_CTA}
+        </Link>
       </div>
     </div>
   );

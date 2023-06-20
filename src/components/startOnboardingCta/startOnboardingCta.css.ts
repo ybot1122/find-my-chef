@@ -15,8 +15,19 @@ export const frontCover = style({
 export const startOnboardingCard = style({
   position: "relative",
   width: "320px",
-  border: "1px black solid",
   margin: "20px",
   height: "500px",
   overflow: "hidden",
+});
+
+export const ctaButton = style({
+  margin: "25px",
+  padding: "5px",
+  display: "inline-block",
+  border: "1px black solid",
+  textDecoration: "none",
+  fontSize: "2em",
+  ":hover": {
+    fontWeight: "bold",
+  },
 });
