@@ -25,3 +25,11 @@ export const chefName = style({
   margin: 0,
   padding: 0,
 });
+
+export const photoGallery = style({});
+
+export const photoGalleryImg = style({
+  width: "100%",
+  height: "320px",
+  objectFit: "cover",
+});
