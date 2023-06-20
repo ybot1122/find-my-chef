@@ -12,10 +12,16 @@ export const column = style({
   flexDirection: "column",
   flexBasis: "100%",
   flex: 1,
+  padding: "5px",
 });
 
 export const profileContainer = style({
-  padding: "25px",
+  padding: "5px",
   margin: "25px",
   border: "1px black dashed",
+});
+
+export const chefName = style({
+  margin: 0,
+  padding: 0,
 });
