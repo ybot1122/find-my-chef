@@ -2,6 +2,7 @@ import React from "react";
 
 import * as css from "./exampleProfile.css";
 import classNames from "classnames";
+import { FoodPhoto } from "./foodPhoto/foodPhoto";
 
 const FAKE_BIO =
   "Hi, this is a short bio about myself. Here is where describe my type of cooking, what I look to post, and anything that will allow foodies to get to know me a bit better.";
@@ -16,48 +17,29 @@ const ExampleProfile = () => {
           <p>{FAKE_BIO}</p>
         </div>
         <div className={css.column}>
-          <img
-            src="/MeProfessionalCropped.jpg"
-            className={css.photoGalleryImg}
-          />
+          <img src="/MeProfessionalCropped.jpg" className={css.profileImg} />
         </div>
       </div>
 
       <div className={classNames(css.row, css.photoGallery)}>
-        <img
-          src="/foodFeed/beefnoodle.jpg"
-          alt="Beef Noodle"
-          className={css.photoGalleryImg}
-        />
-        <img
-          src="/foodFeed/eggrolls.jpg"
-          alt="Egg Rolls"
-          className={css.photoGalleryImg}
-        />
-        <img
+        <FoodPhoto src="/foodFeed/beefnoodle.jpg" alt="Beef Noodle" />
+
+        <FoodPhoto src="/foodFeed/eggrolls.jpg" alt="Egg Rolls" />
+
+        <FoodPhoto
           src="/foodFeed/freshmuffins.gif"
           alt="Fresh Muffins from the oven"
-          className={css.photoGalleryImg}
         />
-        <img
-          src="/foodFeed/granola_bowl.jpg"
-          alt="Bowl of Granola"
-          className={css.photoGalleryImg}
-        />
-        <img
-          src="/foodFeed/granola.jpg"
-          alt="World's best Granola"
-          className={css.photoGalleryImg}
-        />
-        <img
-          src="/foodFeed/pancake-batter.jpg"
-          alt="Pancake batter"
-          className={css.photoGalleryImg}
-        />
-        <img
+
+        <FoodPhoto src="/foodFeed/granola_bowl.jpg" alt="Bowl of Granola" />
+
+        <FoodPhoto src="/foodFeed/granola.jpg" alt="World's best Granola" />
+
+        <FoodPhoto src="/foodFeed/pancake-batter.jpg" alt="Pancake batter" />
+
+        <FoodPhoto
           src="/foodFeed/pancakes-in-pan.jpg"
           alt="Pancakes in the pan"
-          className={css.photoGalleryImg}
         />
       </div>
     </div>

@@ -5,6 +5,7 @@ export const row = style({
   flexDirection: "row",
   flexWrap: "wrap",
   width: "100%",
+  margin: "auto auto",
 });
 
 export const column = style({
@@ -17,8 +18,8 @@ export const column = style({
 
 export const profileContainer = style({
   padding: "5px",
-  margin: "25px",
-  border: "1px black dashed",
+  margin: "auto",
+  maxWidth: "1024px",
 });
 
 export const chefName = style({
@@ -28,8 +29,14 @@ export const chefName = style({
 
 export const photoGallery = style({});
 
-export const photoGalleryImg = style({
+export const profileImg = style({
   width: "100%",
-  height: "320px",
+  height: "240px",
+  borderRadius: "100%",
   objectFit: "cover",
+  "@media": {
+    "screen and (min-width: 768px)": {
+      height: "420px",
+    },
+  },
 });
