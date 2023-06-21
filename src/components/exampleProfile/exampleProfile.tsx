@@ -2,6 +2,7 @@ import React from "react";
 
 import * as css from "./exampleProfile.css";
 import classNames from "classnames";
+import { FoodPhoto } from "./foodPhoto/foodPhoto";
 
 const FAKE_BIO =
   "Hi, this is a short bio about myself. Here is where describe my type of cooking, what I look to post, and anything that will allow foodies to get to know me a bit better.";
@@ -21,73 +22,25 @@ const ExampleProfile = () => {
       </div>
 
       <div className={classNames(css.row, css.photoGallery)}>
-        <div className={css.photoGalleryImgContainer}>
-          <div className={css.recipeCtaScrim} />
-          <div className={css.recipeCta}>Click Here for Recipe</div>
-          <img
-            src="/foodFeed/beefnoodle.jpg"
-            alt="Beef Noodle"
-            className={css.photoGalleryImg}
-          />
-        </div>
+        <FoodPhoto src="/foodFeed/beefnoodle.jpg" alt="Beef Noodle" />
 
-        <div className={css.photoGalleryImgContainer}>
-          <div className={css.recipeCtaScrim} />
-          <div className={css.recipeCta}>Click Here for Recipe</div>
-          <img
-            src="/foodFeed/eggrolls.jpg"
-            alt="Egg Rolls"
-            className={css.photoGalleryImg}
-          />
-        </div>
-        <div className={css.photoGalleryImgContainer}>
-          <div className={css.recipeCtaScrim} />
-          <div className={css.recipeCta}>Click Here for Recipe</div>
-          <img
-            src="/foodFeed/freshmuffins.gif"
-            alt="Fresh Muffins from the oven"
-            className={css.photoGalleryImg}
-          />
-        </div>
-        <div className={css.photoGalleryImgContainer}>
-          <div className={css.recipeCtaScrim} />
-          <div className={css.recipeCta}>Click Here for Recipe</div>
-          <img
-            src="/foodFeed/granola_bowl.jpg"
-            alt="Bowl of Granola"
-            className={css.photoGalleryImg}
-          />
-        </div>
+        <FoodPhoto src="/foodFeed/eggrolls.jpg" alt="Egg Rolls" />
 
-        <div className={css.photoGalleryImgContainer}>
-          <div className={css.recipeCtaScrim} />
-          <div className={css.recipeCta}>Click Here for Recipe</div>
-          <img
-            src="/foodFeed/granola.jpg"
-            alt="World's best Granola"
-            className={css.photoGalleryImg}
-          />
-        </div>
+        <FoodPhoto
+          src="/foodFeed/freshmuffins.gif"
+          alt="Fresh Muffins from the oven"
+        />
 
-        <div className={css.photoGalleryImgContainer}>
-          <div className={css.recipeCtaScrim} />
-          <div className={css.recipeCta}>Click Here for Recipe</div>
-          <img
-            src="/foodFeed/pancake-batter.jpg"
-            alt="Pancake batter"
-            className={css.photoGalleryImg}
-          />
-        </div>
+        <FoodPhoto src="/foodFeed/granola_bowl.jpg" alt="Bowl of Granola" />
 
-        <div className={css.photoGalleryImgContainer}>
-          <div className={css.recipeCtaScrim} />
-          <div className={css.recipeCta}>Click Here for Recipe</div>
-          <img
-            src="/foodFeed/pancakes-in-pan.jpg"
-            alt="Pancakes in the pan"
-            className={css.photoGalleryImg}
-          />
-        </div>
+        <FoodPhoto src="/foodFeed/granola.jpg" alt="World's best Granola" />
+
+        <FoodPhoto src="/foodFeed/pancake-batter.jpg" alt="Pancake batter" />
+
+        <FoodPhoto
+          src="/foodFeed/pancakes-in-pan.jpg"
+          alt="Pancakes in the pan"
+        />
       </div>
     </div>
   );
