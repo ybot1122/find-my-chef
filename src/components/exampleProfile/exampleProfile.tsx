@@ -32,6 +32,8 @@ const ExampleProfile = () => {
         </div>
 
         <div className={css.photoGalleryImgContainer}>
+          <div className={css.recipeCtaScrim} />
+          <div className={css.recipeCta}>Click Here for Recipe</div>
           <img
             src="/foodFeed/eggrolls.jpg"
             alt="Egg Rolls"
@@ -39,6 +41,8 @@ const ExampleProfile = () => {
           />
         </div>
         <div className={css.photoGalleryImgContainer}>
+          <div className={css.recipeCtaScrim} />
+          <div className={css.recipeCta}>Click Here for Recipe</div>
           <img
             src="/foodFeed/freshmuffins.gif"
             alt="Fresh Muffins from the oven"
@@ -46,6 +50,8 @@ const ExampleProfile = () => {
           />
         </div>
         <div className={css.photoGalleryImgContainer}>
+          <div className={css.recipeCtaScrim} />
+          <div className={css.recipeCta}>Click Here for Recipe</div>
           <img
             src="/foodFeed/granola_bowl.jpg"
             alt="Bowl of Granola"
@@ -54,6 +60,8 @@ const ExampleProfile = () => {
         </div>
 
         <div className={css.photoGalleryImgContainer}>
+          <div className={css.recipeCtaScrim} />
+          <div className={css.recipeCta}>Click Here for Recipe</div>
           <img
             src="/foodFeed/granola.jpg"
             alt="World's best Granola"
@@ -62,6 +70,8 @@ const ExampleProfile = () => {
         </div>
 
         <div className={css.photoGalleryImgContainer}>
+          <div className={css.recipeCtaScrim} />
+          <div className={css.recipeCta}>Click Here for Recipe</div>
           <img
             src="/foodFeed/pancake-batter.jpg"
             alt="Pancake batter"
@@ -70,6 +80,8 @@ const ExampleProfile = () => {
         </div>
 
         <div className={css.photoGalleryImgContainer}>
+          <div className={css.recipeCtaScrim} />
+          <div className={css.recipeCta}>Click Here for Recipe</div>
           <img
             src="/foodFeed/pancakes-in-pan.jpg"
             alt="Pancakes in the pan"
