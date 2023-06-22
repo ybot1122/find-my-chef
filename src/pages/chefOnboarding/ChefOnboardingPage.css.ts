@@ -30,3 +30,8 @@ export const goToNextStep = style({
   margin: 0,
   textAlign: "right",
 });
+
+export const container = style({
+  margin: "auto",
+  maxWidth: "768px",
+});

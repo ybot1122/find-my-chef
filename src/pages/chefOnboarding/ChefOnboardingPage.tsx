@@ -18,12 +18,10 @@ const ChefOnboardingPage = () => {
   );
 
   return (
-    <section>
-      <h2>Chef Onboarding!</h2>
-      <h3>As a chef here is how I will create my account...</h3>
-
-      <div>
+    <>
+      <section>
         <div className={css.onboardingSteps}>
+          <h2>Chef Onboarding!</h2>
           <div
             className={classNames(css.onboardingStep, {
               [css.activeStep]: currentStep === 0,
@@ -46,10 +44,13 @@ const ChefOnboardingPage = () => {
             Make First Post
           </div>
         </div>
-
-        {currentStep === 0 && <ChefOnboardingStepOne />}
-        {currentStep === 1 && <ChefOnboardingStepTwo />}
-        {currentStep === 2 && <ChefOnboardingStepThree />}
+      </section>
+      <section>
+        <div className={css.container}>
+          {currentStep === 0 && <ChefOnboardingStepOne />}
+          {currentStep === 1 && <ChefOnboardingStepTwo />}
+          {currentStep === 2 && <ChefOnboardingStepThree />}
+        </div>
 
         <div className={css.goToContainer}>
           <div className={css.goToPrevStep}>
@@ -63,8 +64,8 @@ const ChefOnboardingPage = () => {
             </button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

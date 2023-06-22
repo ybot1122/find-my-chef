@@ -1,29 +1,31 @@
 import React from "react";
 
+import * as css from "./chefOnboardingStepOne.css";
+
 const ChefOnboardingStepOne = () => {
   return (
     <div>
       <h2>Select Your Cuisines</h2>
 
-      <table>
+      <table className={css.container}>
         <tbody>
           <tr>
-            <td>American</td>
-            <td>Mexican</td>
-            <td>Chinese</td>
-            <td>Italian</td>
+            <td className={css.containerCell}>American</td>
+            <td className={css.containerCell}>Mexican</td>
+            <td className={css.containerCell}>Chinese</td>
+            <td className={css.containerCell}>Italian</td>
           </tr>
           <tr>
-            <td>Nigerian</td>
-            <td>Japanese</td>
-            <td>Korean</td>
-            <td>Argentinian</td>
+            <td className={css.containerCell}>Nigerian</td>
+            <td className={css.containerCell}>Japanese</td>
+            <td className={css.containerCell}>Korean</td>
+            <td className={css.containerCell}>Argentinian</td>
           </tr>
           <tr>
-            <td>Spanish</td>
-            <td>British</td>
-            <td>Mediterranean</td>
-            <td>Indian</td>
+            <td className={css.containerCell}>Spanish</td>
+            <td className={css.containerCell}>British</td>
+            <td className={css.containerCell}>Mediterranean</td>
+            <td className={css.containerCell}>Indian</td>
           </tr>
         </tbody>
       </table>
