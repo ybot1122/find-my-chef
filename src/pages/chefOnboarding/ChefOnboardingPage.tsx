@@ -50,18 +50,18 @@ const ChefOnboardingPage = () => {
           {currentStep === 0 && <ChefOnboardingStepOne />}
           {currentStep === 1 && <ChefOnboardingStepTwo />}
           {currentStep === 2 && <ChefOnboardingStepThree />}
-        </div>
 
-        <div className={css.goToContainer}>
-          <div className={css.goToPrevStep}>
-            <button onClick={goToPrevStep} disabled={currentStep === 0}>
-              Go To Previous Step
-            </button>
-          </div>
-          <div className={css.goToNextStep}>
-            <button onClick={goToNextStep} disabled={currentStep === 2}>
-              Go To Next Step
-            </button>
+          <div className={css.goToContainer}>
+            <div className={css.goToPrevStep}>
+              <button onClick={goToPrevStep} disabled={currentStep === 0}>
+                Go To Previous Step
+              </button>
+            </div>
+            <div className={css.goToNextStep}>
+              <button onClick={goToNextStep} disabled={currentStep === 2}>
+                Go To Next Step
+              </button>
+            </div>
           </div>
         </div>
       </section>

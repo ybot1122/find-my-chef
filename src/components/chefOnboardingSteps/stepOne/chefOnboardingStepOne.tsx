@@ -1,6 +1,7 @@
 import React, { useCallback } from "react";
 
 import * as css from "./chefOnboardingStepOne.css";
+import classNames from "classnames";
 
 const CUISINES = [
   "American",
@@ -40,17 +41,20 @@ const ChefOnboardingStepOne = () => {
     const row = [];
     for (let j = i; j < CUISINES.length && j < i + CUISINES_PER_ROW; j++) {
       row.push(
-        <td className={css.containerCell} onClick={onClick(j)}>
-          {CUISINES[j]}
+        <td>
+          <button
+            className={classNames(css.containerCell, {
+              [css.activeCuisine]: selected.current.has(j),
+            })}
+            onClick={onClick(j)}
+          >
+            {CUISINES[j]}
+          </button>
         </td>
       );
     }
     cuisineTableContents.push(<tr>{row}</tr>);
   }
-
-  // renders the currently selected cuisines
-  const currentlySelected: string[] = [];
-  selected.current.forEach((j) => currentlySelected.push(CUISINES[j] + " "));
 
   return (
     <div>
@@ -58,7 +62,6 @@ const ChefOnboardingStepOne = () => {
       <table className={css.container}>
         <tbody>{cuisineTableContents}</tbody>
       </table>
-      You have selected: {currentlySelected}
     </div>
   );
 };

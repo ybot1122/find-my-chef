@@ -13,3 +13,8 @@ export const containerCell = style({
     cursor: "pointer",
   },
 });
+
+export const activeCuisine = style({
+  color: "green",
+  fontWeight: "bold",
+});
