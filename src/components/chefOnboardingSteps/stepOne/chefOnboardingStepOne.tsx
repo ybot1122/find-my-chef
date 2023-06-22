@@ -40,8 +40,10 @@ const ChefOnboardingStepOne = () => {
     const row = [];
     for (let j = i; j < CUISINES.length && j < i + CUISINES_PER_ROW; j++) {
       row.push(
-        <td className={css.containerCell} onClick={onClick(j)}>
-          {CUISINES[j]}
+        <td>
+          <button className={css.containerCell} onClick={onClick(j)}>
+            {CUISINES[j]}
+          </button>
         </td>
       );
     }

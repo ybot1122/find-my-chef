@@ -1,6 +1,7 @@
 import React from "react";
 
 import * as css from "./chefOnboardingStepTwo.css";
+import classNames from "classnames";
 
 type ConnectedStatus = 0 | 1 | -1; // 0 = not connected, 1 = connected, -1 = pending
 
@@ -35,37 +36,65 @@ const ChefOnboardingStepTwo = () => {
     <div>
       <h2>Link Your Social Media</h2>
 
-      <div className={css.connectButton} onClick={onFacebookConnect}>
+      <button
+        className={classNames(css.connectButton, {
+          [css.connectButtonActive]: facebookConnected === 0,
+          [css.connectButtonComplete]: facebookConnected === 1,
+        })}
+        onClick={onFacebookConnect}
+        disabled={facebookConnected !== 0}
+      >
         {facebookConnected === 1
           ? "Facebook Connected!"
           : facebookConnected === 0
           ? "Connect your Facebook"
           : "pending"}
-      </div>
+      </button>
 
-      <div className={css.connectButton} onClick={onInstagramConnect}>
+      <button
+        className={classNames(css.connectButton, {
+          [css.connectButtonActive]: instagramConnected === 0,
+          [css.connectButtonComplete]: instagramConnected === 1,
+        })}
+        onClick={onInstagramConnect}
+        disabled={instagramConnected !== 0}
+      >
         {instagramConnected === 1
           ? "Instagram Connected!"
           : instagramConnected === 0
           ? "Connect your Instagram"
           : "pending"}
-      </div>
+      </button>
 
-      <div className={css.connectButton} onClick={onTikTokConnect}>
+      <button
+        className={classNames(css.connectButton, {
+          [css.connectButtonActive]: tikTokConnected === 0,
+          [css.connectButtonComplete]: tikTokConnected === 1,
+        })}
+        onClick={onTikTokConnect}
+        disabled={tikTokConnected !== 0}
+      >
         {tikTokConnected === 1
           ? "TikTok Connected!"
           : tikTokConnected === 0
           ? "Connect your TikTok"
           : "pending"}
-      </div>
+      </button>
 
-      <div className={css.connectButton} onClick={onYoutubeConnect}>
+      <button
+        className={classNames(css.connectButton, {
+          [css.connectButtonActive]: youtubeConnected === 0,
+          [css.connectButtonComplete]: youtubeConnected === 1,
+        })}
+        onClick={onYoutubeConnect}
+        disabled={youtubeConnected !== 0}
+      >
         {youtubeConnected === 1
           ? "Youtube Connected!"
           : youtubeConnected === 0
           ? "Connect your Youtube"
           : "pending"}
-      </div>
+      </button>
 
       <div className={css.connectButton}>Any other Social Media?</div>
     </div>
